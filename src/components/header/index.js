@@ -1,14 +1,17 @@
 import { Fragment } from "react";
-import HeaderTools from "./headeTools";
+import HeaderTools from "./headerTools";
 import Logo from "./Logo";
 import Menu from "./menu";
-import "./style.css"
+import { Row, Col } from "antd"
+
 export function Header(){
     return (
         <Fragment>
-            <Menu/>
-            <Logo/>
-            <HeaderTools/>
+            <Row justify="space-between">
+                <Col><Menu/></Col>
+                <Col><Logo/></Col>
+                <Col><HeaderTools/></Col>
+            </Row>
         </Fragment>
     )
 }

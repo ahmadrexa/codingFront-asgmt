@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
-import "./style.css"
+import "./style.js";
+import styled from "styled-components";
+import { Fragment } from "react";
+import Style from "./style.js";
 export function Menu(){
     return (
-        <ul>
-            <li><Link to= "/">Coins</Link></li>
-            <li><Link to= "/">2456</Link></li>
-            <li><Link to= "/">Coi123456ns</Link></li>
-
-        </ul>
+        <Style>
+            <ul>
+                <li><Link to= "/">Coins</Link></li>
+                <li><Link to= "/">Exchange</Link></li>
+                <li><Link to= "/">Swaps</Link></li>
+            </ul>
+        </Style>
     )
 }
 export default Menu;
